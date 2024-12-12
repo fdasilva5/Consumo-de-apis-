@@ -1,0 +1,182 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f8f8; 
+}
+
+header {
+    background-color: #333; 
+    color: white; 
+    padding: 10px;
+}
+
+.header-container {
+    background-color: gray;
+    height: 90px;
+    display: flex;
+    align-items: center; /
+}
+
+.header-container p.centrado {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px; 
+    width: 1150px;
+    margin-bottom: 10px; 
+}
+
+
+.logo {
+    display: block;
+    height: 80px;
+    padding-left: 0.5%;
+    
+    
+}
+
+main {
+    display: flex;
+    flex: 1;
+}
+
+.sidebar {
+    width: 220px; 
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #ccc; /
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px; 
+}
+
+.sidebar-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content {
+    flex-grow: 1; 
+    padding: 20px;
+    background-color: white; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    margin-top: auto; 
+    text-align: right;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+}
+
+/* Estilo para las frases aleatorias */
+
+.random-frase p {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 5px; 
+    background-color: #f8f8f8; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.random-frase p:nth-child(1) {
+    text-shadow: 2px 2px 2px #c0c0c0;
+}
+
+.random-frase p:nth-child(2) {
+    text-shadow: 2px 2px 2px #00ff00;
+}
+
+.random-frase p:nth-child(3) {
+    text-shadow: 2px 2px 2px #0000ff; 
+}
+
+.expectation {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para api nasa*/
+
+.apod {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white; 
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.apod img {
+    max-width: 100%; 
+    width: 80vw; 
+    max-height: 50vh; 
+    height: auto; 
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover; 
+}
+
+
+.apod h3 {
+    color: #333; 
+    margin-top: 0;
+}
+
+.apod p {
+    color: #666; 
+    margin-bottom: 0;
+}
+
+
+/* Estilos para los posts */
+#postsContainer {
+    margin-top: 20px;
+}
+
+#postsContainer div {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#postsContainer h3 {
+    margin-top: 0;
+    color: #333; 
+}
+
+#postsContainer p {
+    margin-bottom: 0;
+    color: #666; 
+}
+
+#postsContainer a {
+    color: #007bff; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#postsContainer a:hover {
+    text-decoration: underline;
+}

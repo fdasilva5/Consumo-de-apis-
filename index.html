@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TP1</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img class="logo" src="2607924_utn-frlp-by-lanutriafuriosa.webp" class="img-thumbnail">    
+            <p class="centrado">TP1 - Da Silva, Franco</p>
+        </div>
+    </header>      
+
+    <main>
+        <div class="sidebar">
+            <ul class="sidebar-menu">
+                <li><button onclick="getPosts();">Ultimos posts de JSONPlaceholder</button></li>
+                <li><button onclick="getAPOD();">Imagen astronomica del dia</button></li>
+                <li><button onclick="location.reload();">Volver a la Pagina Principal</button></li>
+            </ul>
+        </div>
+       
+        <div class="content">
+            <section class="random-frase">
+                <p id="fraseAleatoria">Frase aleatoria</p>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            </section>
+            <section class="posts">
+                <div id="postsContainer"></div>
+            </section>
+            
+            <section class="apod">
+                <h2>Imagen astronomica del dia</h2>
+                <img id="imagenAPOD" src="" alt="Astronomy Picture of the Day">
+                <h3 id="tituloAPOD"></h3>
+                <p id="descripcionAPOD"></p>
+            </section>
+
+            <section class="expectation">
+                <p>Mi expectativa en esta cátedra es aumentar mis conocimientos sobre el desarrollo web, aprender a aplicar buenas prácticas de programación y desarrollar proyectos que me preparen para el mundo laboral.</p>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="footer">Tecnología y Gestion Web - 12/6/2024</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
